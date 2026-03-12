@@ -18,7 +18,7 @@
 /* different coordinate systems are only allowed  */
 /* in this file.                                  */
 /* ---------------------------------------------- */
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\BODY\Include\BODY.GMM"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\BODY\Include\BODY.GMM"
 /* ---------------------------------------------- */
 /* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
 /* ---------------------------------------------- */

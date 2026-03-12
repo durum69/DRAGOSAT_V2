@@ -17,22 +17,25 @@
 # ---------------------------------------------- #
 #
 # MLI - MLI
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\MLI\MLI.NODES"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\MLI\MLI.NODES"
 #
 # BODY - BODY
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\BODY\BODY.NODES"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\BODY\BODY.NODES"
 #
 # SOLAR PANELS - SPS
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\SPS\SPS.NODES"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\SPS\SPS.NODES"
 #
 # IR CAMERA - IR_CAM
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.NODES"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.NODES"
 #
 # INSTRUMENTS - INS
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\INS\INS.NODES"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\INS\INS.NODES"
 #
 # RADIATOR - RADIATOR
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.NODES"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.NODES"
+#
+# ANTENA - ANT
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\ANT\ANT.NODES"
 #
 # ------------ END OF INCLUDE BLOCK ------------ #
 #

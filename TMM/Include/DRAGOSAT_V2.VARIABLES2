@@ -17,22 +17,25 @@ C ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- C
 C ---------------------------------------------- C
 C
 C MLI - MLI
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\MLI\MLI.VARIABLES2"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\MLI\MLI.VARIABLES2"
 C
 C BODY - BODY
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\BODY\BODY.VARIABLES2"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\BODY\BODY.VARIABLES2"
 C
 C SOLAR PANELS - SPS
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\SPS\SPS.VARIABLES2"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\SPS\SPS.VARIABLES2"
 C
 C IR CAMERA - IR_CAM
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.VARIABLES2"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.VARIABLES2"
 C
 C INSTRUMENTS - INS
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\INS\INS.VARIABLES2"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\INS\INS.VARIABLES2"
 C
 C RADIATOR - RADIATOR
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.VARIABLES2"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.VARIABLES2"
+C
+C ANTENA - ANT
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\ANT\ANT.VARIABLES2"
 C
 C ------------ END OF INCLUDE BLOCK ------------ C
 C

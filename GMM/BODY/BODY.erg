@@ -16,8 +16,8 @@
 /* corresponding submodel.                        */
 /* ---------------------------------------------- */
 BEGIN_MODEL BODY_STANDALONE
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\BODY\BODY.assembly"
+  INCLUDE "C:\Users\aleks\Desktop\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\BODY\BODY.assembly"
 
 GEOMETRY DUMMY_ASSEMBLY;
 BODY_STANDALONE = DUMMY_ASSEMBLY + BODY;

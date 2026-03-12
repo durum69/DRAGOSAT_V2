@@ -16,9 +16,9 @@
 /* corresponding submodel.                        */
 /* ---------------------------------------------- */
 BEGIN_MODEL RADIATOR_STANDALONE
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\RADIATOR\Include\RADIATOR.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\RADIATOR\RADIATOR.assembly"
+  INCLUDE "C:\Users\aleks\Desktop\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\RADIATOR\Include\RADIATOR.materials"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\RADIATOR\RADIATOR.assembly"
 
 GEOMETRY DUMMY_ASSEMBLY;
 RADIATOR_STANDALONE = DUMMY_ASSEMBLY + RADIATOR;

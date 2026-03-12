@@ -17,8 +17,8 @@
 /* ---------------------------------------------- */
 BEGIN_MODEL DRAGOSAT_V2
 
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\DRAGOSAT_V2.assembly"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\DRAGOSAT_V2.assembly"
 
 
 END_MODEL

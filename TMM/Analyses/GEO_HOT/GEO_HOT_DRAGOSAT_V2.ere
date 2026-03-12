@@ -20,11 +20,11 @@ ANALYSIS_CASE GEO_HOT;
 DEFINE_ANALYSIS_CASE (
     analysis_case = GEO_HOT,
     solver = "ESATAN",
-    working_directory = "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Analyses\GEO_HOT\Analyses Files\Results",
+    working_directory = "C:\Users\aleks\Desktop\DRAGOSAT_V2\TMM\Analyses\GEO_HOT\Analyses Files\Results",
     analysis_file = "DRAGOSAT_V2_GEO_HOT.d",
     radiative_case = GEO70,
     error_code =  analysis_case_error_flag,
-    template_file = "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Analyses\GEO_HOT\GEO_HOT_DRAGOSAT_V2.tpl");
+    template_file = "C:\Users\aleks\Desktop\DRAGOSAT_V2\TMM\Analyses\GEO_HOT\GEO_HOT_DRAGOSAT_V2.tpl");
 
 IF (analysis_case_error_flag == 0) THEN
 

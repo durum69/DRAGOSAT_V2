@@ -17,8 +17,8 @@
 /* ---------------------------------------------- */
 BEGIN_MODEL INS_STANDALONE
 
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos/DRAGOSAT_V2/GMM/Include/DRAGOSAT_V2.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos/DRAGOSAT_V2/GMM/INS/INS.assembly"
+  INCLUDE "C:/Users/aleks/Desktop/DRAGOSAT_V2/GMM/Include/DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/aleks/Desktop/DRAGOSAT_V2/GMM/INS/INS.assembly"
 
 GEOMETRY DUMMY_ASSEMBLY;
 INS_STANDALONE = DUMMY_ASSEMBLY + INS;

@@ -24,6 +24,21 @@
 # ---------------------------------------------- #
 
 # GL conductors added automatically
+# Date: 2026-03-12 22:34:51
+# Total: 7 conductors
+
+    GL(105,4200) = 7.5D-02; # prueba
+    GL(106,4200) = 7.5D-02; # prueba
+    GL(107,4201) = 7.5D-02; # prueba
+    GL(123,150) = 5.0D-03; # prueba
+    GL(11,150) = 5.0D-03; # prueba
+    GL(1200,8500) = 6.780125D-03 * 4.4D+02; # prueba
+    GL(1201,8500) = 6.890140D-03 * 4.4D+02; # prueba
+
+
+# ---------------------------------------------- #
+
+# GL conductors added automatically
 # Date: 2026-02-02 13:10:06
 # Total: 92 conductors
 

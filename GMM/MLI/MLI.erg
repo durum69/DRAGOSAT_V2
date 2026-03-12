@@ -17,8 +17,8 @@
 /* ---------------------------------------------- */
 BEGIN_MODEL MLI_STANDALONE
 
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\MLI\MLI.assembly"
+  INCLUDE "C:\Users\aleks\Desktop\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\MLI\MLI.assembly"
 
 GEOMETRY DUMMY_ASSEMBLY;
 MLI_STANDALONE = DUMMY_ASSEMBLY + MLI;

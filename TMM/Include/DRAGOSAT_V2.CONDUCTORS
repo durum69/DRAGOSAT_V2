@@ -17,27 +17,56 @@
 # ---------------------------------------------- #
 #
 # MLI - MLI
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\MLI\MLI.CONDUCTORS"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\MLI\MLI.CONDUCTORS"
 #
 # BODY - BODY
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\BODY\BODY.CONDUCTORS"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\BODY\BODY.CONDUCTORS"
 #
 # SOLAR PANELS - SPS
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\SPS\SPS.CONDUCTORS"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\SPS\SPS.CONDUCTORS"
 #
 # IR CAMERA - IR_CAM
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.CONDUCTORS"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.CONDUCTORS"
 #
 # INSTRUMENTS - INS
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\INS\INS.CONDUCTORS"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\INS\INS.CONDUCTORS"
 #
 # RADIATOR - RADIATOR
-       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.CONDUCTORS"
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.CONDUCTORS"
+#
+# ANTENA - ANT
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\ANT\ANT.CONDUCTORS"
 #
 # ------------ END OF INCLUDE BLOCK ------------ #
 #
 # ---------------------------------------------- #
 # USER-DEFINED CONDUCTORS - DO NOT REMOVE
+# ---------------------------------------------- #
+
+# GL conductors added automatically
+# Date: 2026-03-12 22:34:51
+# Total: 18 conductors
+
+    GL(45102,1205) = 3.450123D-04 * 5.0D+02; # prueba
+    GL(45103,1205) = 3.891005D-04 * 5.0D+02; # prueba
+    GL(45104,1205) = 3.112450D-04 * 5.0D+02; # prueba
+    GL(68010,59000) = 1.25D-01; # prueba
+    GL(68011,59000) = 1.25D-01; # prueba
+    GL(2304,50012) = 8.904512D-05 * 1.5D+03; # prueba
+    GL(2305,50012) = 8.751230D-05 * 1.5D+03; # prueba
+    GL(2306,50012) = 9.102345D-05 * 1.5D+03; # prueba
+    GL(2307,50012) = 8.850010D-05 * 1.5D+03; # prueba
+    GL(34500,69999) = 2.105430D-03 * 2.5D+02; # prueba
+    GL(34501,69999) = 2.450120D-03 * 2.5D+02; # prueba
+    GL(34502,69999) = 2.001230D-03 * 2.5D+02; # prueba
+    GL(55020,10200) = 1.112050D-04 * 8.0D+01; # prueba
+    GL(55021,10200) = 1.154030D-04 * 8.0D+01; # prueba
+    GL(55022,10200) = 1.095060D-04 * 8.0D+01; # prueba
+    GL(61005,33045) = 4.2D-01; # prueba
+    GL(61006,33045) = 4.2D-01; # prueba
+    GL(61007,33046) = 4.2D-01; # prueba
+
+
 # ---------------------------------------------- #
 
 # GL conductors added automatically

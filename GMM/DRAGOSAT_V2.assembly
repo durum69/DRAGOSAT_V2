@@ -18,28 +18,31 @@
 /* different coordinate systems are only allowed  */
 /* in this file.                                  */
 /* ---------------------------------------------- */
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.GMM"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\DRAGOSAT_V2.GMM"
 /* ---------------------------------------------- */
 /* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
 /* ---------------------------------------------- */
 
 /* MLI - MLI */
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\MLI\MLI.assembly"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\MLI\MLI.assembly"
 
 /* BODY - BODY */
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\BODY\BODY.assembly"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\BODY\BODY.assembly"
 
 /* SOLAR PANELS - SPS */
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\SPS\SPS.assembly"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\SPS\SPS.assembly"
 
 /* IR CAMERA - IR_CAM */
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\IR_CAM\IR_CAM.assembly"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\IR_CAM\IR_CAM.assembly"
 
 /* INSTRUMENTS - INS */
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\INS\INS.assembly"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\INS\INS.assembly"
 
 /* RADIATOR - RADIATOR */
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\RADIATOR\RADIATOR.assembly"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\RADIATOR\RADIATOR.assembly"
+
+/* ANTENA - ANT */
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\ANT\ANT.assembly"
 
 /* ------------ END OF INCLUDE BLOCK ------------ */
 

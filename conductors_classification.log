@@ -1,0 +1,52 @@
+================================================================================
+AUTOMATIC GL CONDUCTOR CLASSIFICATION
+ESATAN-TMS - Hierarchical Models
+Model: DRAGOSAT_V2
+Date: 2026-03-12 22:34:51
+================================================================================
+
+GENERAL SUMMARY
+--------------------------------------------------------------------------------
+GL lines processed:        25
+Conductors classified:     25
+Conductors not classified: 0
+Files modified:            2
+Errors:                    0
+
+================================================================================
+.CONDUCTORS FILE DISTRIBUTION
+================================================================================
+
+File: DRAGOSAT_V2.CONDUCTORS
+Path:   C:\Users\aleks\Desktop\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.CONDUCTORS
+Total:  18 GL conductors added
+--------------------------------------------------------------------------------
+  Level 0: 18 conductors
+    → GL(45102, 1205) | Model: DRAGOSAT_V2
+    → GL(45103, 1205) | Model: DRAGOSAT_V2
+    → GL(45104, 1205) | Model: DRAGOSAT_V2
+    → GL(68010, 59000) | Model: DRAGOSAT_V2
+    → GL(68011, 59000) | Model: DRAGOSAT_V2
+    → GL(2304, 50012) | Model: DRAGOSAT_V2
+    → GL(2305, 50012) | Model: DRAGOSAT_V2
+    → GL(2306, 50012) | Model: DRAGOSAT_V2
+    → GL(2307, 50012) | Model: DRAGOSAT_V2
+    → GL(34500, 69999) | Model: DRAGOSAT_V2
+    ... and 8 more
+
+File: MLI.CONDUCTORS
+Path:   C:\Users\aleks\Desktop\DRAGOSAT_V2\TMM\Include\MLI\MLI.CONDUCTORS
+Total:  7 GL conductors added
+--------------------------------------------------------------------------------
+  Level 1: 7 conductors
+    → GL(105, 4200) | Model: MLI
+    → GL(106, 4200) | Model: MLI
+    → GL(107, 4201) | Model: MLI
+    → GL(123, 150) | Model: MLI
+    → GL(11, 150) | Model: MLI
+    → GL(1200, 8500) | Model: MLI
+    → GL(1201, 8500) | Model: MLI
+
+================================================================================
+END OF REPORT
+================================================================================

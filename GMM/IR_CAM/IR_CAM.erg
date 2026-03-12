@@ -16,9 +16,9 @@
 /* corresponding submodel.                        */
 /* ---------------------------------------------- */
 BEGIN_MODEL IR_CAM_STANDALONE
-  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\IR_CAM\Include\IR_CAM.materials"
-  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\IR_CAM\IR_CAM.assembly"
+  INCLUDE "C:\Users\aleks\Desktop\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\IR_CAM\Include\IR_CAM.materials"
+  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\IR_CAM\IR_CAM.assembly"
 
 GEOMETRY DUMMY_ASSEMBLY;
 IR_CAM_STANDALONE = DUMMY_ASSEMBLY + IR_CAM;
