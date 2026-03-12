@@ -2,12 +2,12 @@
 /* ----- FILE INFORMATION - DO NOT REMOVE ------- */
 /* ---------------------------------------------- */
 /*
-/* MODEL NAME: INSTRUMENTS
+/* MODEL NAME: PLD
 /* FILE NAME: materials
-/* CREATED BY: Iordan IDR
-/* CREATED ON: 11/11/2025 13:03:31
-/* LAST UPDATED BY: Iordan IDR
-/* LAST UPDATED ON: 11/11/2025 13:03:31
+/* CREATED BY: Ante Budimir
+/* CREATED ON: 12/03/2026 22:20:36
+/* LAST UPDATED BY: Ante Budimir
+/* LAST UPDATED ON: 12/03/2026 22:20:36
 /* VERSION: v0.0
 */
 /* -------------- END OF INFO BLOCK ------------- */
@@ -15,7 +15,5 @@
 /* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
 /* ---------------------------------------------- */
 
-/* PLD - INS_PLD */
-  INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\GMM\INS\INS_PLD\Include\INS_PLD.materials"
 
 /* ------------ END OF INCLUDE BLOCK ------------ */

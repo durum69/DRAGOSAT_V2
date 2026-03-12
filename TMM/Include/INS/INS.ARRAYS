@@ -16,6 +16,8 @@
 # ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- #
 # ---------------------------------------------- #
 #
+# PLD - INS_PLD
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\INS\INS_PLD\INS_PLD.ARRAYS"
 #
 # ------------ END OF INCLUDE BLOCK ------------ #
 #

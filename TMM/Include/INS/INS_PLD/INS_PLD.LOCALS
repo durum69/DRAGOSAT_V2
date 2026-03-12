@@ -2,12 +2,12 @@
 # ----- FILE INFORMATION - DO NOT REMOVE ------- #
 # ---------------------------------------------- #
 #
-# MODEL NAME: INSTRUMENTS
-# FILE NAME: NODES
-# CREATED BY: Iordan IDR
-# CREATED ON: 11/11/2025 13:03:31
-# LAST UPDATED BY: Iordan IDR
-# LAST UPDATED ON: 11/11/2025 13:03:31
+# MODEL NAME: PLD
+# FILE NAME: LOCALS
+# CREATED BY: Ante Budimir
+# CREATED ON: 12/03/2026 22:20:36
+# LAST UPDATED BY: Ante Budimir
+# LAST UPDATED ON: 12/03/2026 22:20:36
 # VERSION: v0.0
 #
 # -------------- END OF INFO BLOCK ------------- #
@@ -16,11 +16,9 @@
 # ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- #
 # ---------------------------------------------- #
 #
-# PLD - INS_PLD
-       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\INS\INS_PLD\INS_PLD.NODES"
 #
 # ------------ END OF INCLUDE BLOCK ------------ #
 #
 # ---------------------------------------------- #
-# USER-DEFINED NODES - DO NOT REMOVE
+# USER-DEFINED LOCALS - DO NOT REMOVE
 # ---------------------------------------------- #

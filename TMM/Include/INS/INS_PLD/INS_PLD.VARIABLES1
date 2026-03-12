@@ -2,12 +2,12 @@ C ---------------------------------------------- C
 C ----- FILE INFORMATION - DO NOT REMOVE ------- C
 C ---------------------------------------------- C
 C
-C MODEL NAME: INSTRUMENTS
-C FILE NAME: INITIAL
-C CREATED BY: Iordan IDR
-C CREATED ON: 11/11/2025 13:03:31
-C LAST UPDATED BY: Iordan IDR
-C LAST UPDATED ON: 11/11/2025 13:03:31
+C MODEL NAME: PLD
+C FILE NAME: VARIABLES1
+C CREATED BY: Ante Budimir
+C CREATED ON: 12/03/2026 22:20:36
+C LAST UPDATED BY: Ante Budimir
+C LAST UPDATED ON: 12/03/2026 22:20:36
 C VERSION: v0.0
 C
 C -------------- END OF INFO BLOCK ------------- C
@@ -16,11 +16,9 @@ C ---------------------------------------------- C
 C ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- C
 C ---------------------------------------------- C
 C
-C PLD - INS_PLD
-       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\INS\INS_PLD\INS_PLD.INITIAL"
 C
 C ------------ END OF INCLUDE BLOCK ------------ C
 C
 C ---------------------------------------------- C
-C USER-DEFINED INITIAL - DO NOT REMOVE
+C USER-DEFINED VARIABLES1 - DO NOT REMOVE
 C ---------------------------------------------- C

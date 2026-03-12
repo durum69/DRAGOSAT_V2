@@ -16,6 +16,8 @@ C ---------------------------------------------- C
 C ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- C
 C ---------------------------------------------- C
 C
+C PLD - INS_PLD
+       $INCLUDE "C:/Users/aleks/Desktop\DRAGOSAT_V2\TMM\Include\INS\INS_PLD\INS_PLD.VARIABLES1"
 C
 C ------------ END OF INCLUDE BLOCK ------------ C
 C
