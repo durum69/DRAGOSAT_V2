@@ -1,0 +1,36 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: MLI
+/* FILE NAME: assembly
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 11/11/2025 13:02:39
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 11/11/2025 13:02:39
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* This file is intended as an assembly of the    */
+/* lower hierarchy models with their parent.      */
+/* Rotation and traslation operations to relate   */
+/* different coordinate systems are only allowed  */
+/* in this file.                                  */
+/* ---------------------------------------------- */
+  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\MLI\Include\MLI.GMM"
+/* ---------------------------------------------- */
+/* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
+/* ---------------------------------------------- */
+
+
+/* ------------ END OF INCLUDE BLOCK ------------ */
+GEOMETRY MLI_Down_Cut;
+MLI_Down_Cut = MLI_Down - Cilindro_Corte_copy;
+
+GEOMETRY MLI_Up_Cut;
+MLI_Up_Cut = MLI_Up - Box_Corte_MLI;
+
+GEOMETRY MLI;
+MLI = MLI_Back + MLI_Down_Cut + MLI_Front + 
+    MLI_Left + MLI_Right + MLI_Up_Cut;

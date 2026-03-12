@@ -1,0 +1,97 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: BODY
+/* FILE NAME: erk
+/* CREATED BY: Iordan Dragovchev
+/* CREATED ON: 12/02/2026 10:46:16
+/* LAST UPDATED BY: Iordan Dragovchev
+/* LAST UPDATED ON: 12/02/2026 10:46:16
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+
+BEGIN_MODEL David WORKBENCH_V1 ESARAD_GENERATED
+
+RADIATIVE_CASE GEO70;
+DEFINE_RADIATIVE_CASE (
+    radiative_case = GEO70,
+    mission_type = "ORBITAL",
+    environment = TRUE);
+
+DEFINE_MISSION (
+    radiative_case = GEO70,
+    orbit_centre = "PLANET",
+    start_date = "2026-02-11T12:39",
+    celestial_body_positioning = "USER",
+    planet_name = "Earth",
+    planet_radius = 6371000.0,
+    sun_radius = 695800000.0,
+    gc = 9.798,
+    sun_distance = 147657113944.676819,
+    solar_decln = -13.915926,
+    sun_alpha = -35.194746,
+    alt_p = 800000.0,
+    alt_a = 800000.0,
+    position_method = "ANGLE",
+    angle_gap = 45.0,
+    final_anomaly = 360.0,
+    eclipse_points = TRUE,
+    eclipse_offset = 0.5,
+    orientation = "POINTING",
+    primary_vector = [0.0, 0.0, 1.0],
+    primary_direction = "ZENITH",
+    second_vector = [0.0, 1.0, 0.0],
+    second_direction = "NORMAL_TO_ORBIT",
+    euler_order = "phi, psi, omega",
+    spinning_craft = FALSE,
+    sun_temperature = 5778.0,
+    sun_size_finite = FALSE,
+    planet_temperature_method = "UNIFORM",
+    planet_temperature = 254.3,
+    planet_infra_red_emissivity = 1.0,
+    planet_albedo = 0.306);
+
+DEFINE_ACCURACY (
+    radiative_case = GEO70,
+    control_method = "FIXED_RAYS",
+    coupling_min_rays_normal = 10000,
+    coupling_min_rays_critical = 100000,
+    coupling_min_rays_non_critical = 1000,
+    hf_min_rays_normal = 10000,
+    hf_min_rays_critical = 100000,
+    hf_min_rays_non_critical = 1000,
+    ray_total_cutoff = 0.005,
+    seed = 1000,
+    extinct = 0.001);
+
+GC = EVAL(GEO70.GC);
+R_PLANET = EVAL(GEO70.ORBIT.PLANET_RADIUS);
+R_SUN = EVAL(GEO70.ORBIT.SUN_RADIUS);
+IF (EVAL(GEO70.SUN_DISTANCE_OVERRIDE) == 0.0) THEN
+    SUN_PLANET_DIST = EVAL(GEO70.ORBIT.SUN_DISTANCE);
+ELSE
+    SUN_PLANET_DIST = EVAL(GEO70.SUN_DISTANCE_OVERRIDE);
+END_IF
+T_SUN = EVAL(GEO70.T_SUN);
+SOLAR_DECLINATION = EVAL(GEO70.ORBIT.SOLAR_DECLN);
+
+PROP_ENV = GEO70.PROP_ENV;
+
+INTEGER radiative_case_error_flag = 0;
+FOR (orbit_index = 1;
+    orbit_index <= GEO70.NUM_ORBIT_POSITIONS;
+    orbit_index = EVAL(orbit_index + 1))
+
+    CALCULATE (
+        radiative_case = GEO70,
+        calc_types = "REF, SAF, PAF, ALBEDO_PAF",
+        pos_index = orbit_index,
+        eclipse_check = TRUE,
+        error_code = radiative_case_error_flag);
+
+END_FOR
+DELETE radiative_case_error_flag;
+
+END_MODEL

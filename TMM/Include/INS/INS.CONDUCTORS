@@ -1,0 +1,35 @@
+# ---------------------------------------------- #
+# ----- FILE INFORMATION - DO NOT REMOVE ------- #
+# ---------------------------------------------- #
+#
+# MODEL NAME: INSTRUMENTS
+# FILE NAME: CONDUCTORS
+# CREATED BY: Iordan IDR
+# CREATED ON: 11/11/2025 13:03:31
+# LAST UPDATED BY: Iordan IDR
+# LAST UPDATED ON: 11/11/2025 13:03:31
+# VERSION: v0.0
+#
+# -------------- END OF INFO BLOCK ------------- #
+#
+# ---------------------------------------------- #
+# ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- #
+# ---------------------------------------------- #
+#
+#
+# ------------ END OF INCLUDE BLOCK ------------ #
+#
+# ---------------------------------------------- #
+# USER-DEFINED CONDUCTORS - DO NOT REMOVE
+# ---------------------------------------------- #
+
+# GL conductors added automatically
+# Date: 2026-02-02 13:10:06
+# Total: 1 conductors
+
+    GL(40005,40100) = 7.225D-03 * 6.D+02; # from contact zone PCB_EB
+
+
+# ---------------------------------------------- #
+
+# ---------------------------------------------- #

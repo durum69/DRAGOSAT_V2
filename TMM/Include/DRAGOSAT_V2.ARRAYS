@@ -1,0 +1,41 @@
+# ---------------------------------------------- #
+# ----- FILE INFORMATION - DO NOT REMOVE ------- #
+# ---------------------------------------------- #
+#
+# MODEL NAME: DragoSAT_V2
+# FILE NAME: ARRAYS
+# CREATED BY: Iordan IDR
+# CREATED ON: 06/11/2025 12:15:07
+# LAST UPDATED BY: Iordan IDR
+# LAST UPDATED ON: 06/11/2025 12:15:07
+# VERSION: v0.0
+#
+# -------------- END OF INFO BLOCK ------------- #
+#
+# ---------------------------------------------- #
+# ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- #
+# ---------------------------------------------- #
+#
+# MLI - MLI
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\MLI\MLI.ARRAYS"
+#
+# BODY - BODY
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\BODY\BODY.ARRAYS"
+#
+# SOLAR PANELS - SPS
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\SPS\SPS.ARRAYS"
+#
+# IR CAMERA - IR_CAM
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.ARRAYS"
+#
+# INSTRUMENTS - INS
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\INS\INS.ARRAYS"
+#
+# RADIATOR - RADIATOR
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.ARRAYS"
+#
+# ------------ END OF INCLUDE BLOCK ------------ #
+#
+# ---------------------------------------------- #
+# USER-DEFINED ARRAYS - DO NOT REMOVE
+# ---------------------------------------------- #

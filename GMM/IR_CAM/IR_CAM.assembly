@@ -1,0 +1,32 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: IR CAMERA
+/* FILE NAME: assembly
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 11/11/2025 13:03:18
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 11/11/2025 13:03:18
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* This file is intended as an assembly of the    */
+/* lower hierarchy models with their parent.      */
+/* Rotation and traslation operations to relate   */
+/* different coordinate systems are only allowed  */
+/* in this file.                                  */
+/* ---------------------------------------------- */
+  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\IR_CAM\Include\IR_CAM.GMM"
+/* ---------------------------------------------- */
+/* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
+/* ---------------------------------------------- */
+
+GEOMETRY IR_CAM;
+IR_CAM = IR_CAM_ELECT + IR_CAM_ELECT_NGN + IR_CAM_LENS + 
+    IR_CAM_STR;
+
+/* ------------ END OF INCLUDE BLOCK ------------ */
+
+

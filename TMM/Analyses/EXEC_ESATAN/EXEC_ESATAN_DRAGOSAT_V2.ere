@@ -1,0 +1,73 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: DRAGOSAT_V2
+/* FILE NAME: ere
+/* CREATED BY: Iordan Dragovchev
+/* CREATED ON: 16/02/2026 13:40:02
+/* LAST UPDATED BY: Iordan Dragovchev
+/* LAST UPDATED ON: 16/02/2026 13:40:02
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: DRAGOSAT_V2
+/* FILE NAME: ere
+/* CREATED BY: Iordan Dragovchev
+/* CREATED ON: 02/02/2026 12:35:00
+/* LAST UPDATED BY: Iordan Dragovchev
+/* LAST UPDATED ON: 02/02/2026 12:35:00
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+
+BEGIN_MODEL DRAGOSAT_V2 
+
+INTEGER analysis_case_error_flag = 0;
+ANALYSIS_CASE EXEC_ESATAN;
+
+DEFINE_ANALYSIS_CASE (
+    analysis_case = EXEC_ESATAN,
+    solver = "ESATAN",
+    working_directory = "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Analyses\EXEC_ESATAN\Analyses Files\Results",
+    analysis_file = "DRAGOSAT_V2_EXEC_ESATAN.d",
+    radiative_case = RAD_CASE,
+    error_code =  analysis_case_error_flag,
+    template_file = "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Analyses\EXEC_ESATAN\EXEC_ESATAN_DRAGOSAT_V2.tpl");
+
+IF (analysis_case_error_flag == 0) THEN
+
+    GENERATE_ANALYSIS_FILE (
+        analysis_case = EXEC_ESATAN,
+        results = "TRANS_HF, TRANS_REF",
+        ref_averaged = TRUE,
+        ref_cyclic = TRUE,
+        ref_mf = 1.0,
+        hf_averaged = TRUE,
+        hf_cyclic = TRUE,
+        hf_type = "S,A,P",
+        title = "DRAGOSAT_V2_EXEC_ESATAN",
+        dystor = 0,
+        environment = 99999,
+        environment_temperature = -270.0,
+        inactive = 99998,
+        area_mf = 1.0,
+        segments = TRUE,
+        acd_file = FALSE,
+        ref_deviation = 5.0e-3,
+        hf_deviation = 5.0e-3);
+
+END_IF
+
+DELETE analysis_case_error_flag;
+
+RUN_ANALYSIS (
+    analysis_case = EXEC_ESATAN,
+    options = "PreProcess,Solve");
+
+END_MODEL

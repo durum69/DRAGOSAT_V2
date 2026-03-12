@@ -1,0 +1,34 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: BODY
+/* FILE NAME: assembly
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 11/11/2025 13:02:50
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 11/11/2025 13:02:50
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* This file is intended as an assembly of the    */
+/* lower hierarchy models with their parent.      */
+/* Rotation and traslation operations to relate   */
+/* different coordinate systems are only allowed  */
+/* in this file.                                  */
+/* ---------------------------------------------- */
+  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\BODY\Include\BODY.GMM"
+/* ---------------------------------------------- */
+/* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
+/* ---------------------------------------------- */
+
+
+/* ------------ END OF INCLUDE BLOCK ------------ */
+GEOMETRY Body_Down_Cut;
+Body_Down_Cut = Body_Panel_Down - Cilindro_Corte;
+
+GEOMETRY BODY;
+BODY = Body_Panel_Back + Body_Panel_Front + Body_Panel_Left + 
+    Body_Panel_Right + Body_Panel_Up + Body_Tray_1 + Body_Tray_2 + 
+    Body_Down_Cut;

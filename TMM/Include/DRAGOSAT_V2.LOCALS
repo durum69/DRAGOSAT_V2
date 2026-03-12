@@ -1,0 +1,59 @@
+# ---------------------------------------------- #
+# ----- FILE INFORMATION - DO NOT REMOVE ------- #
+# ---------------------------------------------- #
+#
+# MODEL NAME: DragoSAT_V2
+# FILE NAME: LOCALS
+# CREATED BY: Iordan IDR
+# CREATED ON: 06/11/2025 12:15:07
+# LAST UPDATED BY: Iordan IDR
+# LAST UPDATED ON: 06/11/2025 12:15:07
+# VERSION: v0.0
+#
+# -------------- END OF INFO BLOCK ------------- #
+#
+# ---------------------------------------------- #
+# ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- #
+# ---------------------------------------------- #
+#
+# MLI - MLI
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\MLI\MLI.LOCALS"
+#
+# BODY - BODY
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\BODY\BODY.LOCALS"
+#
+# SOLAR PANELS - SPS
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\SPS\SPS.LOCALS"
+#
+# IR CAMERA - IR_CAM
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.LOCALS"
+#
+# INSTRUMENTS - INS
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\INS\INS.LOCALS"
+#
+# RADIATOR - RADIATOR
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.LOCALS"
+#
+# ------------ END OF INCLUDE BLOCK ------------ #
+#
+# ---------------------------------------------- #
+# USER-DEFINED LOCALS - DO NOT REMOVE
+# ---------------------------------------------- #
+
+    $REAL
+      #
+      # Material properties from bulk 'Al_6061' 
+      k_Al_6061 = 160.000;  Cp_Al_6061 = 900.000;  Dens_Al_6061 = 2700.00;  
+      #
+      # Material properties from bulk 'CFRP' 
+      k1_CFRP = 42.0000;  k2_CFRP = 42.0000;  k3_CFRP = 5.00000;  
+      Cp_CFRP = 800.000;  Dens_CFRP = 1750.00;  
+      #
+      # Material properties from bulk 'GaAs'
+      k_GaAs = 55.000; Cp_GaAs = 1000.00;  Dens_GaAs = 5300.00;
+      #
+      # Material properties from bulk 'Glass' 
+      Cp_Glass = 310.000;  Dens_Glass = 5330.00;  
+      #
+      # Material properties from bulk 'MLI_MAT' 
+      k_MLI_MAT = 0.000000;  Cp_MLI_MAT = 900.000;  Dens_MLI_MAT = 300.000;  

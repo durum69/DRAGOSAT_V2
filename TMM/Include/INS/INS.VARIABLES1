@@ -1,0 +1,44 @@
+C ---------------------------------------------- C
+C ----- FILE INFORMATION - DO NOT REMOVE ------- C
+C ---------------------------------------------- C
+C
+C MODEL NAME: INSTRUMENTS
+C FILE NAME: VARIABLES1
+C CREATED BY: Iordan IDR
+C CREATED ON: 11/11/2025 13:03:31
+C LAST UPDATED BY: Iordan IDR
+C LAST UPDATED ON: 11/11/2025 13:03:31
+C VERSION: v0.0
+C
+C -------------- END OF INFO BLOCK ------------- C
+C
+C ---------------------------------------------- C
+C ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- C
+C ---------------------------------------------- C
+C
+C
+C ------------ END OF INCLUDE BLOCK ------------ C
+C
+C ---------------------------------------------- C
+C USER-DEFINED VARIABLES1 - DO NOT REMOVE
+C ---------------------------------------------- C
+
+C Boundary Condition Total Area Heat Load - PCB_PC
+      QI40100 = 13D+00
+C
+C Boundary Condition Total Area Heat Load - PLD_1_BC
+      QI41000 = 1.226351D+00
+      QI41001 = 7.550678D-01
+      QI41002 = 2.685810D-01
+      QI41003 = 7.550678D-01
+      QI41004 = 2.685810D-01
+      QI41005 = 1.226351D+00
+C
+C Boundary Condition Total Area Heat Load - PLD_2_BC
+      QI42000 = 1.137441D+00
+      QI42001 = 5.308057D-01
+      QI42002 = 3.317535D-01
+      QI42003 = 5.308057D-01
+      QI42004 = 3.317535D-01
+      QI42005 = 1.137441D+00
+C

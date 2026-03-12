@@ -1,0 +1,27 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: MLI
+/* FILE NAME: erg
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 11/11/2025 13:02:39
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 11/11/2025 13:02:39
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* This file is intended as standalone view of    */
+/* corresponding submodel.                        */
+/* ---------------------------------------------- */
+BEGIN_MODEL MLI_STANDALONE
+
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\MLI\MLI.assembly"
+
+GEOMETRY DUMMY_ASSEMBLY;
+MLI_STANDALONE = DUMMY_ASSEMBLY + MLI;
+
+END_MODEL
+/* ---------------------------------------------- */

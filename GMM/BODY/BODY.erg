@@ -1,0 +1,26 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: BODY
+/* FILE NAME: erg
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 11/11/2025 13:02:50
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 11/11/2025 13:02:50
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* This file is intended as standalone view of    */
+/* corresponding submodel.                        */
+/* ---------------------------------------------- */
+BEGIN_MODEL BODY_STANDALONE
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.materials"
+  INCLUDE "C:/Users/i.dragovchev/Desktop/proyectos\DRAGOSAT_V2\GMM\BODY\BODY.assembly"
+
+GEOMETRY DUMMY_ASSEMBLY;
+BODY_STANDALONE = DUMMY_ASSEMBLY + BODY;
+
+END_MODEL
+/* ---------------------------------------------- */

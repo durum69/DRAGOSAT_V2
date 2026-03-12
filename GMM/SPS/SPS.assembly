@@ -1,0 +1,36 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: SOLAR PANELS
+/* FILE NAME: assembly
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 11/11/2025 13:03:05
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 11/11/2025 13:03:05
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* This file is intended as an assembly of the    */
+/* lower hierarchy models with their parent.      */
+/* Rotation and traslation operations to relate   */
+/* different coordinate systems are only allowed  */
+/* in this file.                                  */
+/* ---------------------------------------------- */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\SPS\Include\SPS.GMM"
+/* ---------------------------------------------- */
+/* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
+/* ---------------------------------------------- */
+
+/* ------------ END OF INCLUDE BLOCK ------------ */
+
+GEOMETRY RIGHT_SP;
+RIGHT_SP = SPS_STR_1 + SPS_CELL_1;
+
+GEOMETRY LEFT_SP;
+LEFT_SP = SPS_STR_2 + SPS_CELL_2;
+
+GEOMETRY SPS;
+SPS = RIGHT_SP + LEFT_SP;
+

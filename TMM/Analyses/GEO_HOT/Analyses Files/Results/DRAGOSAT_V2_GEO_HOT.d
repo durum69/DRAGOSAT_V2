@@ -1,0 +1,67 @@
+$MODEL DRAGOSAT_V2_GEO_HOT
+# ESATAN-TMS 2025, run date 10:12 Thu 19 Feb 2026
+# Model name: DRAGOSAT_V2        Analysis case: GEO_HOT
+# Model name: DRAGOSAT_V2      Analysis case: GEO_HOT
+#
+  $LOCALS
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.DUMMY.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.LOCALS"
+#
+  $NODES
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.NODES.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.NODES"
+#
+  $CONDUCTORS
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.CONDUCTORS.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.CONDUCTORS"
+#
+  $CONSTANTS
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.CONSTANTS.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.CONSTANTS"
+#
+  $ARRAYS
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.ARRAYS.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.ARRAYS"
+#
+  $SUBROUTINES
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.SUBROUTINES.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.SUBROUTINES"
+C
+  $INITIAL
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.BOUNDARY_CONDS.data"
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.INITIAL.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.INITIAL"
+C
+  $EXECUTION
+C
+C Steady State Solution
+C
+      RELXCA=0.01
+      NLOOP=100
+C
+      CALL SOLVFM
+C
+C Transient Solution
+C
+      TIMEND=PERIOD
+      DTIMEI=TIMEND/100.0
+      OUTINT=TIMEND/10.0
+C
+      CALL SLCRNC
+
+  $VARIABLES1
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.VARIABLES1.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.VARIABLES1"
+C
+  $VARIABLES2
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.VARIABLES2.data"
+    $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\DRAGOSAT_V2.VARIABLES2"
+C
+  $OUTPUTS
+      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+    $INCLUDE "DRAGOSAT_V2_GEO_HOT.OUTPUTS.data"
+C
+$ENDMODEL #DRAGOSAT_V2_GEO_HOT

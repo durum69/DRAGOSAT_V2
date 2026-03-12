@@ -1,0 +1,37 @@
+# ---------------------------------------------- #
+# ----- FILE INFORMATION - DO NOT REMOVE ------- #
+# ---------------------------------------------- #
+#
+# MODEL NAME: IR CAMERA
+# FILE NAME: CONDUCTORS
+# CREATED BY: Iordan IDR
+# CREATED ON: 11/11/2025 13:03:18
+# LAST UPDATED BY: Iordan IDR
+# LAST UPDATED ON: 11/11/2025 13:03:18
+# VERSION: v0.0
+#
+# -------------- END OF INFO BLOCK ------------- #
+#
+# ---------------------------------------------- #
+# ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- #
+# ---------------------------------------------- #
+#
+#
+# ------------ END OF INCLUDE BLOCK ------------ #
+#
+# ---------------------------------------------- #
+# USER-DEFINED CONDUCTORS - DO NOT REMOVE
+# ---------------------------------------------- #
+
+# GL conductors added automatically
+# Date: 2026-02-02 13:10:06
+# Total: 4 conductors
+
+    GL(30100,30101) = k1_CFRP * 1.40668D-03; # from primitive IR_CAM_STR
+    GL(30100,30102) = k2_CFRP * 2.843238D-03; # from primitive IR_CAM_STR
+    GL(30101,30103) = k2_CFRP * 2.843238D-03; # from primitive IR_CAM_STR
+    GL(30102,30103) = k1_CFRP * 1.40668D-03; # from primitive IR_CAM_STR
+
+    GL(31005,30102) = 1.8; # Union EB con CAM_STR
+    GL(31005,30103) = 1.8; # Union EB con CAM_STR
+# ---------------------------------------------- #

@@ -1,0 +1,88 @@
+# ---------------------------------------------- #
+# ----- FILE INFORMATION - DO NOT REMOVE ------- #
+# ---------------------------------------------- #
+#
+# MODEL NAME: DragoSAT_V2
+# FILE NAME: CONDUCTORS
+# CREATED BY: Iordan IDR
+# CREATED ON: 06/11/2025 12:15:07
+# LAST UPDATED BY: Iordan IDR
+# LAST UPDATED ON: 06/11/2025 12:15:07
+# VERSION: v0.0
+#
+# -------------- END OF INFO BLOCK ------------- #
+#
+# ---------------------------------------------- #
+# ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- #
+# ---------------------------------------------- #
+#
+# MLI - MLI
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\MLI\MLI.CONDUCTORS"
+#
+# BODY - BODY
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\BODY\BODY.CONDUCTORS"
+#
+# SOLAR PANELS - SPS
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\SPS\SPS.CONDUCTORS"
+#
+# IR CAMERA - IR_CAM
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\IR_CAM\IR_CAM.CONDUCTORS"
+#
+# INSTRUMENTS - INS
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\INS\INS.CONDUCTORS"
+#
+# RADIATOR - RADIATOR
+       $INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\TMM\Include\RADIATOR\RADIATOR.CONDUCTORS"
+#
+# ------------ END OF INCLUDE BLOCK ------------ #
+#
+# ---------------------------------------------- #
+# USER-DEFINED CONDUCTORS - DO NOT REMOVE
+# ---------------------------------------------- #
+
+# GL conductors added automatically
+# Date: 2026-02-16 09:39:05
+# Total: 1 conductors
+
+    GL(50005,40000) = 4.5;
+
+
+# ---------------------------------------------- #
+
+# GL conductors added automatically
+# Date: 2026-02-02 13:10:42
+# Total: 31 conductors
+
+    GL(11000,41005) = 1.087969D-03 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11001,41005) = 9.773437D-04 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11002,42005) = 4.125D-04 * 6.5D+02; # from contact zone PLD_2_CZ
+    GL(11003,42005) = 1.5D-04 * 6.5D+02; # from contact zone PLD_2_CZ
+    GL(11004,41005) = 2.550937D-03 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11005,41005) = 2.204531D-03 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11006,42005) = 3.466406D-03 * 6.5D+02; # from contact zone PLD_2_CZ
+    GL(11007,42005) = 1.251563D-03 * 6.5D+02; # from contact zone PLD_2_CZ
+    GL(11008,41005) = 2.519062D-03 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11009,41005) = 2.216719D-03 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11010,42005) = 2.7675D-03 * 6.5D+02; # from contact zone PLD_2_CZ
+    GL(11011,42005) = 9.801563D-04 * 6.5D+02; # from contact zone PLD_2_CZ
+    GL(11012,41005) = 1.026562D-04 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11013,41005) = 9.515625D-05 * 6.5D+02; # from contact zone PLD_1_CZ
+    GL(11108,40005) = 2.47D-03 * 6.5D+02; # from contact zone EB
+    GL(11109,40005) = 2.859D-03 * 6.5D+02; # from contact zone EB
+    GL(11112,40005) = 2.103D-03 * 6.5D+02; # from contact zone EB
+    GL(11113,40005) = 2.568D-03 * 6.5D+02; # from contact zone EB
+    GL(10112,20101) = 6.3D-01; # from conductor SP2_to_Body_2
+    GL(10112,20102) = 6.3D-01; # from conductor SP2_to_Body_1
+    GL(10412,20021) = 6.3D-01; # from conductor SP1_to_Body_1
+    GL(10412,20022) = 6.3D-01; # from conductor SP1_to_Body_2
+    GL(10506,50005) = 2.02392D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10507,50005) = 2.53152D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10508,50005) = 2.09088D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10511,50005) = 2.63736D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10512,50005) = 2.90736D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10513,50005) = 2.54016D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10516,50005) = 2.25288D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10517,50005) = 2.55744D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+    GL(10518,50005) = 2.05848D-03 * 2.5D+03; # from contact zone RAD_to_BODY
+
+# ---------------------------------------------- #

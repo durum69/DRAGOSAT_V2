@@ -1,0 +1,172 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: IR CAMERA
+/* FILE NAME: GMM
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 11/11/2025 13:03:18
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 11/11/2025 13:03:18
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+
+GEOMETRY IR_CAM_ELECT;
+IR_CAM_ELECT = SHELL_SCS_BOX (
+    height = 0.015,
+    xmax = 0.1,
+    ymax = 0.1,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 1,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 1,
+    ratio2 = 1.0,
+    meshType3 = "regular",
+    nodes3 = 1,
+    ratio3 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "IR_CAM_ELECT",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 31000,
+    ndelta1 = 1,
+    opt1 = al_anod,
+    colour1 = "DARK_RED",
+    label2 = "IR_CAM_ELECT",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 31000,
+    ndelta2 = 1,
+    opt2 = al_anod,
+    colour2 = "DARK_RED",
+    composition = "SINGLE",
+    bulk = Al_6061,
+    thick = 0.01,
+    bulk1 = [-10000.0, -10000.0, -10000.0],
+    thick1 = 0.0,
+    bulk2 = [-10000.0, -10000.0, -10000.0],
+    thick2 = 0.0,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+IR_CAM_ELECT = TRANSLATE (
+    object_name = IR_CAM_ELECT,
+    x_dist = -0.05,
+    y_dist = -0.05,
+    z_dist = -0.0645,
+    clear = TRUE);
+
+GEOMETRY IR_CAM_ELECT_NGN;
+IR_CAM_ELECT_NGN = NON_GEOMETRIC_THERMAL_NODE (
+    origin = [-0.05, 0.05, -0.0645],
+    radius = 1.5e-03,
+    node_number = 31100,
+    label1 = "IR_CAM_ELECT",
+    volume = 0.0,
+    bulk = [-10000.0, -10000.0, -10000.0],
+    capacitance_override = 1000.0,
+    colour1 = "ORANGE",
+    colour2 = "ORANGE");
+
+IR_CAM_ELECT_NGN = TRANSLATE (
+    object_name = IR_CAM_ELECT_NGN,
+    x_dist = 0.05,
+    y_dist = -0.055,
+    z_dist = 7.5e-03,
+    clear = TRUE);
+
+GEOMETRY IR_CAM_LENS;
+IR_CAM_LENS = SHELL_SCS_DISC (
+    rmax = 0.029,
+    rmin = 0.0,
+    height = 0.0,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 1,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 1,
+    ratio2 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "IR_CAM_LENS",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 32000,
+    ndelta1 = 1,
+    opt1 = IR_LENS_COAT,
+    colour1 = "WHITE",
+    label2 = "IR_CAM_LENS",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 32000,
+    ndelta2 = 1,
+    opt2 = IR_LENS_COAT,
+    colour2 = "WHITE",
+    composition = "SINGLE",
+    bulk = Glass,
+    thick = 1.5e-03,
+    bulk1 = [-10000.0, -10000.0, -10000.0],
+    thick1 = 0.0,
+    bulk2 = [-10000.0, -10000.0, -10000.0],
+    thick2 = 0.0,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+IR_CAM_LENS = TRANSLATE (
+    object_name = IR_CAM_LENS,
+    z_dist = -0.125,
+    clear = TRUE);
+
+GEOMETRY IR_CAM_STR;
+IR_CAM_STR = SHELL_SCS_CYLINDER (
+    radius = 0.0295,
+    hmax = 0.065,
+    hmin = 0.0,
+    angmin = 0.0,
+    angmax = 360.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 2,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 2,
+    ratio2 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "IR_CAM_STR",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 30100,
+    ndelta1 = 1,
+    opt1 = white_paint,
+    colour1 = "ORANGE",
+    label2 = "IR_CAM",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 30100,
+    ndelta2 = 1,
+    opt2 = white_paint,
+    colour2 = "ORANGE",
+    composition = "SINGLE",
+    bulk = CFRP,
+    thick = 1.0e-03,
+    bulk1 = [-10000.0, -10000.0, -10000.0],
+    thick1 = 0.0,
+    bulk2 = [-10000.0, -10000.0, -10000.0],
+    thick2 = 0.0,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+IR_CAM_STR = TRANSLATE (
+    object_name = IR_CAM_STR,
+    z_dist = -0.13,
+    clear = TRUE);

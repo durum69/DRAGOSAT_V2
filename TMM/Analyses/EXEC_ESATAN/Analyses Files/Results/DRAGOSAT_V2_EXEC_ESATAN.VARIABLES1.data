@@ -1,0 +1,10 @@
+# Results Generated from
+# ESATAN-TMS 2025, run date 11:07 Tue 17 Feb 2026
+# Model name: DRAGOSAT_V2        Analysis case: EXEC_ESATAN
+C
+      IF (SOLVER(:2) .EQ. 'SS') THEN
+          CALL QAVERG
+      ELSE
+          CALL QCYCLC
+          CALL RCYCLC
+      END IF

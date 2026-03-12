@@ -1,0 +1,30 @@
+
+     +-------------------------------------------+
+     +             ESATAN-TMS 2025               +
+     +                                           +
+     +              December 2024                +
+     +                                           +
+     +            www.esatan-tms.com             +
+     +-------------------------------------------+
+
+Model name in use - deleting old files
+Expanding $INCLUDE statements...
+Preprocessing...
+ 
+Processing completed for submodel DRAGOSAT_V2_EXEC_ESATAN
+ 
+Preprocess successful
+
+Log file is DRAGOSAT.log
+
+Creating Fortran for model DRAGOSAT...
+
+Compiling and linking...
+Executable is DRAGOSAT.exe
+
+Running...
+Output file is DRAGOSAT.out
+
+
+ESATAN-TMS Thermal run completed
+

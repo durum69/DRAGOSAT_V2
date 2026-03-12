@@ -1,0 +1,72 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: DragoSAT_V2
+/* FILE NAME: assembly
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 06/11/2025 12:15:07
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 06/11/2025 12:15:07
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* This file is intended as an assembly of the    */
+/* lower hierarchy models with their parent.      */
+/* Rotation and traslation operations to relate   */
+/* different coordinate systems are only allowed  */
+/* in this file.                                  */
+/* ---------------------------------------------- */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\Include\DRAGOSAT_V2.GMM"
+/* ---------------------------------------------- */
+/* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
+/* ---------------------------------------------- */
+
+/* MLI - MLI */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\MLI\MLI.assembly"
+
+/* BODY - BODY */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\BODY\BODY.assembly"
+
+/* SOLAR PANELS - SPS */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\SPS\SPS.assembly"
+
+/* IR CAMERA - IR_CAM */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\IR_CAM\IR_CAM.assembly"
+
+/* INSTRUMENTS - INS */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\INS\INS.assembly"
+
+/* RADIATOR - RADIATOR */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\RADIATOR\RADIATOR.assembly"
+
+/* ------------ END OF INCLUDE BLOCK ------------ */
+
+GEOMETRY FIX_STR;
+FIX_STR = INS + RADIATOR + IR_CAM + 
+    BODY + MLI;
+
+DRAGOSAT_V2 = ASSEMBLE (
+    ref_comp = FIX_STR,
+    moving_comp = SPS,
+    xt = 0.0,
+    yt = 0.0,
+    zt = 0.0,
+    xr = 0.0,
+    yr = 0.0,
+    zr = 0.0,
+    order = "xtytztxryrzr",
+    orientation = "TRUE_SUN",
+    point_vect = [0.0, 0.0, 1.0],
+    rot_point = [0.0, 0.0, 0.0],
+    rot_axis = [0.0, 1.0, 0.0],
+    gen_vect = [0.0, 0.0, 1.0],
+    rot_min_ang = 0.0,
+    rot_max_ang = 360.0,
+    bisecting = FALSE,
+    focus_point = [0.0, 0.0, 0.0],
+    initial_angle = 0.0,
+    rotation_rate = 0.0,
+    stop_point_eclipse = FALSE);
+

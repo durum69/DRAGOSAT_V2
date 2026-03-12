@@ -1,0 +1,32 @@
+C ---------------------------------------------- C
+C ----- FILE INFORMATION - DO NOT REMOVE ------- C
+C ---------------------------------------------- C
+C
+C MODEL NAME: IR CAMERA
+C FILE NAME: VARIABLES1
+C CREATED BY: Iordan IDR
+C CREATED ON: 11/11/2025 13:03:18
+C LAST UPDATED BY: Iordan IDR
+C LAST UPDATED ON: 11/11/2025 13:03:18
+C VERSION: v0.0
+C
+C -------------- END OF INFO BLOCK ------------- C
+C
+C ---------------------------------------------- C
+C ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- C
+C ---------------------------------------------- C
+C
+C
+C ------------ END OF INCLUDE BLOCK ------------ C
+C
+C ---------------------------------------------- C
+C USER-DEFINED VARIABLES1 - DO NOT REMOVE
+C ---------------------------------------------- C
+
+C Boundary Condition Total Area Heat Load - IR_CAM_BC
+      QI31000 = 1.673077D+00
+      QI31001 = 0.0384615D+00
+      QI31002 = 0.0384615D+00
+      QI31003 = 0.0384615D+00
+      QI31004 = 0.0384615D+00
+      QI31005 = 1.673077D+00

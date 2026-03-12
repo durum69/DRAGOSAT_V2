@@ -1,0 +1,222 @@
+/* ---------------------------------------------- */
+/* ----- FILE INFORMATION - DO NOT REMOVE ------- */
+/* ---------------------------------------------- */
+/*
+/* MODEL NAME: DragoSAT_V2
+/* FILE NAME: materials
+/* CREATED BY: Iordan IDR
+/* CREATED ON: 06/11/2025 12:15:07
+/* LAST UPDATED BY: Iordan IDR
+/* LAST UPDATED ON: 06/11/2025 12:15:07
+/* VERSION: v0.0
+*/
+/* -------------- END OF INFO BLOCK ------------- */
+/* ---------------------------------------------- */
+/* ----- INCLUDE STATEMENTS - DO NOT REMOVE ----- */
+/* ---------------------------------------------- */
+
+/* MLI - MLI */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\MLI\Include\MLI.materials"
+
+/* BODY - BODY */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\BODY\Include\BODY.materials"
+
+/* SOLAR PANELS - SPS */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\SPS\Include\SPS.materials"
+
+/* IR CAMERA - IR_CAM */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\IR_CAM\Include\IR_CAM.materials"
+
+/* INSTRUMENTS - INS */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\INS\Include\INS.materials"
+
+/* RADIATOR - RADIATOR */
+  INCLUDE "C:\Users\i.dragovchev\Desktop\proyectos\DRAGOSAT_V2\GMM\RADIATOR\Include\RADIATOR.materials"
+
+/* ------------ END OF INCLUDE BLOCK ------------ */
+
+POINT MLI_esquina_1_inf;
+MLI_esquina_1_inf = [-0.135, -0.16, -0.085];
+
+POINT MLI_esquina_1_sup;
+MLI_esquina_1_sup = [-0.135, -0.16, 0.085];
+
+POINT MLI_esquina_2_inf;
+MLI_esquina_2_inf = [0.135, -0.16, -0.085];
+
+POINT MLI_esquina_2_sup;
+MLI_esquina_2_sup = [0.135, -0.16, 0.085];
+
+POINT MLI_esquina_3_inf;
+MLI_esquina_3_inf = [0.135, 0.16, -0.085];
+
+POINT MLI_esquina_4_inf;
+MLI_esquina_4_inf = [-0.135, 0.16, -0.085];
+
+REAL MLI_k_through_data[5, 2] =
+    {-75.0, 3.93e-03, 
+    -45.0, 0.0104, 
+    14.0, 0.01499, 
+    50.0, 0.02289, 
+    70.0, 0.03368};
+
+POINT esquina_1_inf;
+esquina_1_inf = [-0.125, -0.15, -0.075];
+
+POINT esquina_1_sup;
+esquina_1_sup = [-0.125, -0.15, 0.075];
+
+POINT esquina_2_inf;
+esquina_2_inf = [0.125, -0.15, -0.075];
+
+POINT esquina_2_sup;
+esquina_2_sup = [0.125, -0.15, 0.075];
+
+POINT esquina_3_inf;
+esquina_3_inf = [0.125, 0.15, -0.075];
+
+POINT esquina_3_sup;
+esquina_3_sup = [0.125, 0.15, 0.075];
+
+POINT esquina_4_inf;
+esquina_4_inf = [-0.125, 0.15, -0.075];
+
+POINT esquina_4_sup;
+esquina_4_sup = [-0.125, 0.15, 0.075];
+
+POINT sps_cel_downleft;
+sps_cel_downleft = [0.06, -0.58, 1.5e-03];
+
+POINT sps_cel_downleft_2;
+sps_cel_downleft_2 = [0.06, 0.58, 1.5e-03];
+
+POINT sps_cel_downright;
+sps_cel_downright = [0.06, -0.22, 1.5e-03];
+
+POINT sps_cel_downright_2;
+sps_cel_downright_2 = [0.06, 0.22, 1.5e-03];
+
+POINT sps_cel_upleft;
+sps_cel_upleft = [-0.06, -0.58, 1.5e-03];
+
+POINT sps_cel_upright_2;
+sps_cel_upright_2 = [-0.06, 0.22, 1.5e-03];
+
+PROPERTY MLI_k_through;
+MLI_k_through = DEFINE_PROPERTY (
+    data = MLI_k_through_data,
+    dependence = "TEMPERATURE");
+
+BULK MLI_MAT;
+DEFINE_BULK (
+    bulk = MLI_MAT,
+    description = "			",
+    density = 300.0,
+    sp_heat = 900.0,
+    type = "Isotropic",
+    cond = 0.0);
+
+BULK CFRP;
+DEFINE_BULK (
+    bulk = CFRP,
+    description = "			",
+    density = 1750.0,
+    sp_heat = 800.0,
+    type = "Orthotropic",
+    cond1 = 42.0,
+    cond2 = 42.0,
+    cond3 = 5.0);
+
+BULK Al_6061;
+DEFINE_BULK (
+    bulk = Al_6061,
+    density = 2700.0,
+    sp_heat = 900.0,
+    type = "Isotropic",
+    cond = 160.0);
+
+BULK Glass;
+DEFINE_BULK (
+    bulk = Glass,
+    density = 5330.0,
+    sp_heat = 310.0,
+    type = "Isotropic",
+    cond = 59.0);
+
+BULK GaAs;
+DEFINE_BULK (
+    bulk = GaAs,
+    density = 5300.0,
+    sp_heat = 1000.0,
+    type = "Isotropic",
+    cond = 55.0);
+
+OPTICAL SSM_FEP_Al;
+DEFINE_OPTICAL (
+    optical = SSM_FEP_Al,
+    ir_emiss = 0.12,
+    ir_transm = 0.0,
+    solar_absorb = 0.52,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL FSM_Al;
+DEFINE_OPTICAL (
+    optical = FSM_Al,
+    ir_emiss = 0.03,
+    ir_transm = 0.0,
+    solar_absorb = 0.12,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL al_anod;
+DEFINE_OPTICAL (
+    optical = al_anod,
+    ir_emiss = 0.6,
+    ir_transm = 0.0,
+    solar_absorb = 0.2,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL IR_LENS_COAT;
+DEFINE_OPTICAL (
+    optical = IR_LENS_COAT,
+    ir_emiss = 0.1,
+    ir_transm = 0.9,
+    solar_absorb = 0.9,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL white_paint;
+DEFINE_OPTICAL (
+    optical = white_paint,
+    ir_emiss = 0.8,
+    ir_transm = 0.0,
+    solar_absorb = 0.2,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL black_paint;
+DEFINE_OPTICAL (
+    optical = black_paint,
+    ir_emiss = 0.9,
+    ir_transm = 0.0,
+    solar_absorb = 0.9,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL solar_cell_coating;
+DEFINE_OPTICAL (
+    optical = solar_cell_coating,
+    ir_emiss = 0.84,
+    ir_transm = 0.0,
+    solar_absorb = 0.75,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);                          
